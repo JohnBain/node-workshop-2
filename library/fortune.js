@@ -13,4 +13,6 @@ function getFortune(){
     
 }
 
-console.log(getFortune());
+module.exports = {
+    getFortune: getFortune
+};
