@@ -22,6 +22,4 @@ SynonymAPI.prototype.getSynonyms = function(str, callback){
 //syn1.getSynonyms("dog", function(n){console.log(n)});
 
 
-module.exports = {
-    SynonymAPI: SynonymAPI
-};
+module.exports = SynonymAPI;

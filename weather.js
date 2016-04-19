@@ -19,7 +19,7 @@ prompt.get(['location'], function (err, result) {
             var resultObj = JSON.parse(result.body);
             console.log("Today's weather is:" + resultObj.currently.summary)
             
-            var today = new Date;
+            var today = new Date();
             var today_iso = today.toISOString();
             console.log(today_iso)
             
@@ -30,3 +30,12 @@ prompt.get(['location'], function (err, result) {
 
 //I'm clocking out on this one for the moment. I have an incrementdate loop already written in TonicDev, and I'll add a colorizeWeather
 //function to make the output pretty.
+
+/*
+Consider using MomentJS instead of native functions.
+
+2. Using MomentJS:
+var today = moment();
+var tomorrow = moment(today).add(1, 'day');
+(Beware that add modifies the instance you call it on, rather than returning a new instance, so today.add('days', 1) would modify today. That's why we start with a cloning op on var tomorrow = ....)
+*/
