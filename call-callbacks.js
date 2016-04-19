@@ -1,4 +1,21 @@
 var firstChar = function(string, callback) {
+    setTimeout(function(){ 
+        callback(string.charAt(0));
+    }, 1000)
+}
+
+firstChar("turtle", function(n){console.log(n)});
+
+var lastChar = function(string, callback) {
+    setTimeout(function(){ 
+        callback(string.slice(-1));
+    }, 1000)
+}
+
+lastChar("turtle", function(n){console.log(n)});
+
+
+/*var firstChar = function(string, callback) {
     console.log("Wait..")
 
     var callback = setTimeout(function() {
@@ -23,4 +40,4 @@ var getFirstAndLast = function(string, callback){
 }
 
   getFirstAndLast("hello", function(firstLast) {
-    console.log(firstLast)})
+    console.log(firstLast)})*/
