@@ -4,7 +4,6 @@ var firstChar = function(string, callback) {
     }, 1000)
 }
 
-firstChar("turtle", function(n){console.log(n)});
 
 var lastChar = function(string, callback) {
     setTimeout(function(){ 
@@ -12,7 +11,16 @@ var lastChar = function(string, callback) {
     }, 1000)
 }
 
-lastChar("turtle", function(n){console.log(n)});
+var getFirstAndLast = function(string, callback){
+   firstChar(string, function(n){
+       lastChar(string, function(x){                //When we  want a sequence in asynchronous programming we have to nest.
+           callback(n + x)
+       })
+   })
+}
+
+  getFirstAndLast("turtle", function(n) {
+    console.log(n)})
 
 
 /*var firstChar = function(string, callback) {
