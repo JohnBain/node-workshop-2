@@ -1,0 +1,19 @@
+{
+  "name": "fortune",
+  "version": "1.0.0",
+  "description": "fortunes",
+  "main": "fortune.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnBain/node-workshop-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnBain/node-workshop-2/issues"
+  },
+  "homepage": "https://github.com/JohnBain/node-workshop-2#readme"
+}
